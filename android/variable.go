@@ -114,6 +114,11 @@ type variableProperties struct {
 			Static_libs  []string
 			Srcs         []string
 		}
+
+		En_ffmpegExtractor struct {
+			Cflags   []string
+			Cppflags []string
+		}
 	} `android:"arch_variant"`
 }
 
@@ -230,6 +235,8 @@ type productVariables struct {
 	PgoAdditionalProfileDirs []string `json:",omitempty"`
 
 	VendorVars map[string]map[string]string `json:",omitempty"`
+
+	En_ffmpegExtractor *bool `json:",omitempty"`	
 }
 
 func boolPtr(v bool) *bool {
