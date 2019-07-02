@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "65772123_ad4408ea",
+        "filename": "android/variable.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 1015389
+      },
+      "writtenOn": "2019-07-02T06:32:54Z",
+      "side": 1,
+      "message": "Please remove unnecessary white spaces",
+      "range": {
+        "startLine": 239,
+        "startChar": 45,
+        "endLine": 239,
+        "endChar": 46
+      },
+      "revId": "db2672ff308bea2601b2d13f8e658f3e22c9eca8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
