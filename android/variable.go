@@ -119,6 +119,18 @@ type variableProperties struct {
 			Cflags   []string
 			Cppflags []string
 		}
+
+		Quickboot struct {
+			Cflags   []string
+			Cppflags []string
+			Init_rc  []string
+		}
+
+		Normalboot struct {
+			Cflags   []string
+			Cppflags []string
+			Init_rc  []string
+		}
 	} `android:"arch_variant"`
 }
 
@@ -237,6 +249,8 @@ type productVariables struct {
 	VendorVars map[string]map[string]string `json:",omitempty"`
 
 	En_ffmpegExtractor *bool `json:",omitempty"`
+	Quickboot *bool `json:",omitempty"`
+	Normalboot *bool `json:",omitempty"`
 }
 
 func boolPtr(v bool) *bool {
