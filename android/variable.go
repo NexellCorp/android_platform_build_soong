@@ -131,6 +131,28 @@ type variableProperties struct {
 			Cppflags []string
 			Init_rc  []string
 		}
+
+		BatteryNotifierQuickboot struct {
+			Cflags   []string
+			Cppflags []string
+		}
+
+		GuiQuickboot struct {
+			Cflags   []string
+			Cppflags []string
+		}
+
+		OpenglQuickboot struct {
+			Cflags   []string
+			Cppflags []string
+		}
+
+		SurfaceFlingerQuickboot struct {
+			Cflags   []string
+			Cppflags []string
+			Init_rc  []string
+		}
+
 	} `android:"arch_variant"`
 }
 
@@ -251,6 +273,10 @@ type productVariables struct {
 	En_ffmpegExtractor *bool `json:",omitempty"`
 	Quickboot *bool `json:",omitempty"`
 	Normalboot *bool `json:",omitempty"`
+	BatteryNotifierQuickboot *bool `json:",omitempty"`
+	GuiQuickboot *bool `json:",omitempty"`
+	OpenglQuickboot *bool `json:",omitempty"`
+	SurfaceFlingerQuickboot *bool `json:",omitempty"`
 }
 
 func boolPtr(v bool) *bool {
