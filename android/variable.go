@@ -153,6 +153,12 @@ type variableProperties struct {
 			Init_rc  []string
 		}
 
+		// for CRIU
+		Criu struct {
+			Cflags   []string
+			Cppflags []string
+			Init_rc  []string
+		}
 	} `android:"arch_variant"`
 }
 
@@ -277,6 +283,8 @@ type productVariables struct {
 	GuiQuickboot *bool `json:",omitempty"`
 	OpenglQuickboot *bool `json:",omitempty"`
 	SurfaceFlingerQuickboot *bool `json:",omitempty"`
+	// for CRIU
+	Criu *bool `json:",omitempty"`
 }
 
 func boolPtr(v bool) *bool {
